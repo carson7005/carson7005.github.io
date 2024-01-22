@@ -2,3 +2,9 @@ main  {
 background-color: rgb(233, 231, 231);
 font-style: italic;
 }
+
+#list1 {
+border-color: black;
+border-width: 1cm;
+border-radius: 10%;
+}
