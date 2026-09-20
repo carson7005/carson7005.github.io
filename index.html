@@ -300,6 +300,25 @@
     .term li { margin: 0 0 14px; font-size: 0.97rem; line-height: 1.45; }
     .code { display: block; font-family: var(--mono); font-size: 0.76rem; color: var(--muted); }
 
+    /* About */
+    .about-text { margin: 0 0 36px; max-width: 38rem; font-size: 1.15rem; color: #cfcdc6; }
+    .photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0; }
+    .photos figure { margin: 0; }
+    .photos img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    /* In progress */
+    .entry h3 .status { vertical-align: middle; margin-left: 10px; }
+    .updated { margin: 28px 0 0; font-size: 0.85rem; color: var(--muted); }
+
     /* Contact */
     .contact-lead { margin: 0; max-width: 32rem; font-size: 1.15rem; color: #cfcdc6; }
     .email { display: inline-block; margin-top: 18px; font-family: var(--mono); font-size: 1rem; color: var(--fit); }
@@ -318,7 +337,7 @@
       .nav-links { gap: 20px; }
       .entry { grid-template-columns: 1fr; gap: 6px; }
       .entry .when { padding-top: 0; order: -1; }
-      .skills, .terms { grid-template-columns: 1fr; }
+      .skills, .terms, .photos { grid-template-columns: 1fr; }
       .row-head { flex-direction: column; gap: 2px; }
     }
 
@@ -335,8 +354,10 @@
     <div class="wrap">
       <a class="nav-name" href="#top">Carson Chan</a>
       <div class="nav-links">
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#in-progress">In progress</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
@@ -387,6 +408,24 @@
         </div>
       </header>
     </div>
+
+    <!-- ================= About ================= -->
+    <section class="section" id="about">
+      <div class="wrap section-grid">
+        <h2>About</h2>
+        <div>
+          <p class="about-text">I'm a sophomore at Purdue in West Lafayette, studying statistics with a data science focus and a certificate in entrepreneurship. I'm originally from Dexter, Michigan. This fall I started as a research assistant and began working toward an AWS certification.</p>
+          <div class="photos">
+            <figure>
+              <img src="carson-bridge.jpg" width="1086" height="724" loading="lazy" alt="Carson smiling, leaning on a wooden railing inside a covered bridge with trees behind him">
+            </figure>
+            <figure>
+              <img src="carson-steps.jpg" width="1086" height="724" loading="lazy" alt="Carson sitting on stone steps in front of a glass building, hands clasped">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ================= Projects ================= -->
     <section class="section" id="projects">
@@ -467,6 +506,24 @@
       </div>
     </section>
 
+    <!-- ================= In progress ================= -->
+    <section class="section" id="in-progress">
+      <div class="wrap section-grid">
+        <h2>In progress</h2>
+        <div>
+          <div class="entry">
+            <span class="when">2026</span>
+            <div>
+              <h3>AWS certification <span class="status">In progress</span></h3>
+              <p class="muted">CNAP club, Purdue University</p>
+              <p>Studying for an AWS certification with the CNAP club. I've just started, and I'll move this to Skills once I pass.</p>
+            </div>
+          </div>
+          <p class="updated">Last updated September 2026</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ================= Education ================= -->
     <section class="section" id="education">
       <div class="wrap section-grid">
@@ -540,6 +597,14 @@
       <div class="wrap section-grid">
         <h2>Experience</h2>
         <div>
+          <div class="entry">
+            <span class="when">2026–present</span>
+            <div>
+              <h3>Research Assistant</h3>
+              <p class="muted">Purdue University</p>
+              <p>Working with a professor to build AI-ready databases for interface science research.</p>
+            </div>
+          </div>
           <div class="entry">
             <span class="when">2023–2025</span>
             <div>
