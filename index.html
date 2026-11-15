@@ -258,7 +258,7 @@
     }
 
     /* Skills */
-    .skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin: 0; }
+    .skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin: 0; }
     .skills dt { color: var(--muted); font-size: 0.9rem; margin-bottom: 6px; }
     .skills dd { margin: 0; font-size: 1.1rem; line-height: 1.6; }
 
@@ -370,7 +370,7 @@
       <header class="hero">
         <div>
           <h1><span>Carson</span><span>Chan</span></h1>
-          <p class="lead">I'm a statistics student at Purdue studying data science. I've built a machine-learning study, a hackathon web app, and an alert system used by a National Honor Society chapter.</p>
+          <p class="lead">I'm a statistics student at Purdue studying data science and an undergraduate research assistant building AI-ready databases for interface science. I've built a machine-learning study, a hackathon web app, and an alert system used by a National Honor Society chapter.</p>
           <div class="links">
             <a class="btn btn-primary" href="mailto:carson.chan2007@gmail.com">Email me</a>
             <a class="btn" href="https://github.com/carson7005" target="_blank" rel="noopener">GitHub</a>
@@ -414,7 +414,7 @@
       <div class="wrap section-grid">
         <h2>About</h2>
         <div>
-          <p class="about-text">I'm a sophomore at Purdue in West Lafayette, studying statistics with a data science focus and a certificate in entrepreneurship. I'm originally from Dexter, Michigan. This fall I started as a research assistant and began working toward an AWS certification.</p>
+          <p class="about-text">I'm a sophomore at Purdue in West Lafayette, studying statistics with a data science focus and a certificate in entrepreneurship. I'm originally from Dexter, Michigan. This fall I started as a research assistant, earned Anthropic's Claude Code in Action certification, and began working toward an AWS certification.</p>
           <div class="photos">
             <figure>
               <img src="carson-bridge.jpg" width="1086" height="724" loading="lazy" alt="Carson smiling, leaning on a wooden railing inside a covered bridge with trees behind him">
@@ -435,14 +435,14 @@
           <article class="project">
             <div class="row-head">
               <h3>California Housing Price Prediction</h3>
-              <span class="when">2024</span>
+              <span class="when">May 2025</span>
             </div>
             <p class="context">IB Extended Essay</p>
             <p class="summary">A machine-learning study comparing three supervised algorithms on their ability to predict real-world housing prices.</p>
             <ul class="bullets">
-              <li>Compared Linear Regression, Decision Tree, and KNN models on a real-world Kaggle dataset.</li>
-              <li>Preprocessed the data by removing nulls, one-hot encoding categorical variables, log-normalizing skewed features, and engineering two derived variables.</li>
-              <li>Averaged R² scores for each model. KNN performed best (R² = 0.68), about 6% ahead of the Decision Tree.</li>
+              <li>Compared Linear Regression, Decision Tree, and KNN models on 20,640 California housing records from Kaggle.</li>
+              <li>Improved model input quality with a preprocessing pipeline: null removal, one-hot encoding, log normalization of skewed features, and two engineered features.</li>
+              <li>KNN performed best (R² = 0.68), about 6% ahead of the Decision Tree.</li>
             </ul>
             <ul class="tags" aria-label="Technologies">
               <li>Python</li><li>scikit-learn</li><li>pandas</li><li>NumPy</li><li>Matplotlib</li>
@@ -452,13 +452,13 @@
           <article class="project">
             <div class="row-head">
               <h3>Boilerplate</h3>
-              <span class="when">2025</span>
+              <span class="when">Oct. 2025</span>
             </div>
-            <p class="context">Hello-World Hackathon, West Lafayette, IN</p>
+            <p class="context">Hello World Hackathon, West Lafayette, IN</p>
             <p class="summary">A full-stack web app that brings Purdue's academic tools together in one AI-powered platform.</p>
             <ul class="bullets">
-              <li>Built the platform around Purdue resources, using the Brightspace API and Google Maps for live assignment tracking.</li>
-              <li>Configured the OpenAI API to power a Purdue-specific assistant that answers university-related student questions.</li>
+              <li>Built a full-stack web app unifying Purdue's academic tools, integrating the Brightspace API and Google Maps to deliver live assignment tracking.</li>
+              <li>Developed a Purdue-specific AI assistant with the OpenAI API, tailoring LLM behavior to answer university-related student questions.</li>
             </ul>
             <ul class="tags" aria-label="Technologies">
               <li>Brightspace API</li><li>Google Maps</li><li>OpenAI API</li>
@@ -492,15 +492,19 @@
         <dl class="skills">
           <div>
             <dt>Languages</dt>
-            <dd>Java, Python, HTML</dd>
+            <dd>Python, R, Java, SQL, HTML</dd>
           </div>
           <div>
             <dt>Libraries</dt>
-            <dd>scikit-learn, pandas, NumPy, Matplotlib</dd>
+            <dd>pandas, NumPy, scikit-learn, Matplotlib, plotnine, ASE</dd>
           </div>
           <div>
             <dt>Tools</dt>
-            <dd>Git</dd>
+            <dd>Git, Linux/Bash, SLURM, conda, HPC (Gautschi), VASP, MACE, OpenAI API, Claude Code</dd>
+          </div>
+          <div>
+            <dt>Certifications</dt>
+            <dd>Claude Code in Action, Anthropic (Nov 2026)</dd>
           </div>
         </dl>
       </div>
@@ -519,7 +523,7 @@
               <p>Studying for an AWS certification with the CNAP club. I've just started, and I'll move this to Skills once I pass.</p>
             </div>
           </div>
-          <p class="updated">Last updated September 2026</p>
+          <p class="updated">Last updated November 2026</p>
         </div>
       </div>
     </section>
@@ -535,7 +539,7 @@
               <h3>Purdue University</h3>
               <p class="muted">West Lafayette, IN</p>
               <ul class="bullets">
-                <li>B.S. in Statistics, Data Science major (College of Science)</li>
+                <li>B.S. in Statistics, Data Science Concentration (College of Science)</li>
                 <li>Certificate in Entrepreneurship and Innovation (Daniels School of Business)</li>
                 <li>GPA 3.54, with Dean's List and Semester Honors in Spring 2026</li>
               </ul>
@@ -598,19 +602,26 @@
         <h2>Experience</h2>
         <div>
           <div class="entry">
-            <span class="when">2026–present</span>
+            <span class="when">Aug. 2026–present</span>
             <div>
-              <h3>Research Assistant</h3>
-              <p class="muted">Purdue University</p>
-              <p>Working with a professor to build AI-ready databases for interface science research.</p>
+              <h3>Undergraduate Research Assistant</h3>
+              <p class="muted">Purdue University, AI-Ready Databases for Interface Science</p>
+              <ul class="bullets">
+                <li>Ran 4 structural relaxations across 2 elemental systems using VASP density functional theory (DFT) and MACE machine-learned potentials, submitted as SLURM batch jobs on Purdue's Gautschi HPC cluster, and characterized lattice distortion over each trajectory.</li>
+                <li>Benchmarked the MACE potential against VASP, achieving roughly 2,000&times; lower compute time on equivalent relaxations.</li>
+                <li>Structured relaxation outputs into JSON logs and CSV summaries with Python and ASE, contributing to a database that will train supervised models to predict DFT results.</li>
+              </ul>
             </div>
           </div>
           <div class="entry">
-            <span class="when">2023–2025</span>
+            <span class="when">2023–2026</span>
             <div>
               <h3>Sales Associate</h3>
-              <p class="muted">Ace Hardware</p>
-              <p>Helped customers choose hardware and home improvement products while handling transactions, inventory, and key cutting.</p>
+              <p class="muted">Ace Hardware, Dexter, MI</p>
+              <ul class="bullets">
+                <li>Served 100+ customers per shift, guiding product selection for hardware and home improvement projects.</li>
+                <li>Handled POS transactions, inventory restocking, and key cutting in a fast-paced retail environment.</li>
+              </ul>
             </div>
           </div>
           <div class="entry">
